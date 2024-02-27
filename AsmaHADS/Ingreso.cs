@@ -1,3 +1,6 @@
+using Negocio;
+using Repositorio;
+
 namespace AsmaHADS
 {
     public partial class Ingreso : Form
@@ -41,6 +44,5 @@ namespace AsmaHADS
         {
             this.Close();
         }
-
     }
 }

@@ -196,7 +196,7 @@ namespace AsmaHADS
             paciente.NumeroIdentificacion = numeroIdentificacion;
             paciente.FechaNacimiento = fechaNacimiento;
             paciente.EstadoCivil = estadoCivil;
-            paciente.Genero = genero;
+            paciente.Genero = new Genero() { Id = genero };
             paciente.Ciudad = ciudad;
             paciente.Direccion = direccion;
             paciente.Telefono = telefono;
@@ -205,7 +205,7 @@ namespace AsmaHADS
             paciente.NivelEscolaridad = nivelEscolaridad;
             paciente.Email = email;
             paciente.Eps = eps;
-            paciente.Regimen = regimen;
+            paciente.Regimen = new Regimen() { Id = regimen };
 
             IRepositorioPaciente repositorioPaciente = new RepositorioPaciente();
             INegocioPaciente negocioPaciente = new NegocioPaciente(repositorioPaciente);
