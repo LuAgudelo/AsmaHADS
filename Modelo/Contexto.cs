@@ -18,8 +18,8 @@ namespace Modelo
         public DbSet<Paciente> Pacientes { get; set; }
         public DbSet<Ciudad> Ciudad { get; set; }
         public DbSet<Genero> Genero { get; set; }
-        public DbSet<TipoIdentificacion> TiposDocumentos { get; set; }
-        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<TipoIdentificacion> TipoIdentificacion { get; set; }
+        public DbSet<Usuario> Usuario { get; set; }
         public DbSet<Ocupacion> Ocupacion { get; set; }
         public DbSet<Regimen> Regimen { get; set; }
         public DbSet<NivelEscolaridad> NivelEscolaridad { get; set; }
