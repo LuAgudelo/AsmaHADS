@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ingreso));
-            this.lblBienvenido = new System.Windows.Forms.Label();
+            this.lblBienvenidos = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblContraseña = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -38,22 +38,22 @@
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnIngresar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.erpIngreso = new System.Windows.Forms.ErrorProvider(this.components);
             this.tlpUsuario = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpIngreso)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblBienvenido
+            // lblBienvenidos
             // 
-            this.lblBienvenido.AutoSize = true;
-            this.lblBienvenido.Font = new System.Drawing.Font("Script MT Bold", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblBienvenido.Location = new System.Drawing.Point(172, 20);
-            this.lblBienvenido.Name = "lblBienvenido";
-            this.lblBienvenido.Size = new System.Drawing.Size(464, 115);
-            this.lblBienvenido.TabIndex = 0;
-            this.lblBienvenido.Text = "Bienvenido";
+            this.lblBienvenidos.AutoSize = true;
+            this.lblBienvenidos.Font = new System.Drawing.Font("Script MT Bold", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblBienvenidos.Location = new System.Drawing.Point(146, 20);
+            this.lblBienvenidos.Name = "lblBienvenidos";
+            this.lblBienvenidos.Size = new System.Drawing.Size(503, 115);
+            this.lblBienvenidos.TabIndex = 0;
+            this.lblBienvenidos.Text = "Bienvenidos";
             // 
             // lblUsuario
             // 
@@ -105,9 +105,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(101, 149);
+            this.pictureBox1.Location = new System.Drawing.Point(92, 138);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(242, 118);
+            this.pictureBox1.Size = new System.Drawing.Size(240, 137);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
@@ -122,17 +122,19 @@
             this.btnIngresar.TabIndex = 7;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = false;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
-            // button2
+            // btnCancelar
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button2.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(510, 343);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(213, 50);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnCancelar.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCancelar.Location = new System.Drawing.Point(510, 343);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(213, 50);
+            this.btnCancelar.TabIndex = 8;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
             // 
             // erpIngreso
             // 
@@ -144,7 +146,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtContraseña);
@@ -152,7 +154,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.lblUsuario);
-            this.Controls.Add(this.lblBienvenido);
+            this.Controls.Add(this.lblBienvenidos);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Ingreso";
             this.Text = "Ingreso";
@@ -165,7 +167,7 @@
 
         #endregion
 
-        private Label lblBienvenido;
+        private Label lblBienvenidos;
         private Label lblUsuario;
         private Label lblContraseña;
         private Label label4;
@@ -173,7 +175,7 @@
         private TextBox txtContraseña;
         private PictureBox pictureBox1;
         private Button btnIngresar;
-        private Button button2;
+        private Button btnCancelar;
         private ToolTip tlpUsuario;
         private ErrorProvider erpIngreso;
     }

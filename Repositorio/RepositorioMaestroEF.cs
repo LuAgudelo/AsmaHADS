@@ -68,10 +68,5 @@ namespace Repositorio
         {
             throw new NotImplementedException();
         }
-
-        public List<TipoIdentificacion> ObtenerTipoIdentificacion()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

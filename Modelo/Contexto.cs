@@ -28,7 +28,7 @@ namespace Modelo
 
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
-            builder.UseSqlServer(ConfigurationManager.ConnectionStrings["AplicacionAsma"].ConnectionString);
+            builder.UseSqlServer(ConfigurationManager.ConnectionStrings["conexionAplicacion"].ConnectionString);
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
